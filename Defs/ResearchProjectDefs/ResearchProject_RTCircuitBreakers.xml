@@ -5,7 +5,8 @@
 		<defName>ResearchProject_RTCircuitBreakers</defName>
 		<label>circuit breakers</label>
 		<description>Allows building circuit breakers; can be placed anywhere on a power network with batteries. Each one is enough to safely dissipate up to 3000 Wd (three standard batteries) discharge, and will need to be manually reset if tripped.</description>
-		<totalCost>1500</totalCost>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>ResearchProject_RTBasicFuses</li>
 		</prerequisites>
