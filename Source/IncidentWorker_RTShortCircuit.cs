@@ -20,7 +20,7 @@ namespace RT_Fuse
 				select battery as Building;
 		}
 
-		protected override bool StorytellerCanUseNowSub()
+		protected override bool UsableNowSub()
 		{
 			return UsableBatteries().Any();
 		}
@@ -55,13 +55,13 @@ namespace RT_Fuse
 			foreach (Building fuse in fuses)
 			{
 				energyTotal -= fuse.GetComp<CompRTFuse>().MitigateSurge(energyTotal);
-				if (energyTotal <= 0) break;
+				if (energyTotal < 1) break;
 			}
 
 			StringBuilder stringBuilder = new StringBuilder();
 			Thing victim = victims.RandomElement().parent;
 
-			if (energyTotal > 0)
+			if (energyTotal >= 1)
 			{
 				float explosionRadius = Mathf.Sqrt(energyTotal * 0.05f);
 				if (explosionRadius > 14.9f) explosionRadius = 14.9f;
@@ -113,11 +113,6 @@ namespace RT_Fuse
 			}
 			else
 			{
-				victim.TakeDamage(new DamageInfo(
-					DamageDefOf.Bomb,
-					Rand.Range(0, (int)Math.Floor(0.1f * victim.MaxHitPoints)),
-					null, null, null));
-				
 				stringBuilder.Append("IncidentWorker_RTShortCircuit_FullMitigation".Translate(new object[] 
 				{
 					"AnElectricalConduit".Translate(),

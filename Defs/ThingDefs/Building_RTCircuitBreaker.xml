@@ -32,7 +32,7 @@
 		</researchPrerequisites>
 		<size>(1, 2)</size>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>True</selectable>
 		<rotatable>True</rotatable>
@@ -48,7 +48,7 @@
 		<costList>
 			<Steel>50</Steel>
 			<Plasteel>4</Plasteel>
-			<Components>1</Components>
+			<Component>1</Component>
 		</costList>
 		<building>
 			<ignoreNeedsPower>True</ignoreNeedsPower>
