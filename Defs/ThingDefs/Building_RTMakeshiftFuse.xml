@@ -30,7 +30,7 @@
 			<li>ResearchProject_RTBasicFuses</li>
 		</researchPrerequisites>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>True</selectable>
 		<rotatable>False</rotatable>
@@ -45,7 +45,7 @@
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<costList>
 			<Steel>20</Steel>
-			<Components>1</Components>
+			<Component>1</Component>
 		</costList>
 		<building>
 			<ignoreNeedsPower>True</ignoreNeedsPower>

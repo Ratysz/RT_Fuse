@@ -20,7 +20,7 @@ namespace RT_Fuse
 				select battery as Building;
 		}
 
-		protected override bool StorytellerCanUseNowSub()
+		protected override bool UsableNowSub()
 		{
 			return UsableBatteries().Any();
 		}
