@@ -19,8 +19,8 @@ namespace RT_Fuse
 						&& battery.TryGetComp<CompPowerBattery>().StoredEnergy > 50f)
 				select battery as Building;
 		}
-
-		protected override bool UsableNowSub()
+		
+		protected override bool CanFireNowSub()
 		{
 			return UsableBatteries().Any();
 		}
