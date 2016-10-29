@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ResearchProject_RTBasicFuses.label>基礎熔斷器</ResearchProject_RTBasicFuses.label>
+  <ResearchProject_RTBasicFuses.description>解鎖建造「簡易熔斷器」，可佈置於帶有電池的電網的任意一處。每個熔斷器可以吸收3000Wd的放電量（三個標準電池），跳閘後需要修理。</ResearchProject_RTBasicFuses.description>
+
+
+</LanguageData>
