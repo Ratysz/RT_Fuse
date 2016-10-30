@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <IncidentWorker_RTShortCircuit_PartialMitigation>{0}的内部故障引起了短路。\n\n已连接的电池内储存的{1}Wd全部释放出来，但其中{2}Wd被保险装置缓冲。</IncidentWorker_RTShortCircuit_PartialMitigation>
+
+  <IncidentWorker_RTShortCircuit_FullMitigation>{0}的内部故障引起了短路。\n\n已连接的电池内储存的{1}Wd全部释放出来，但因保险装置的保护而没有造成严重损害。</IncidentWorker_RTShortCircuit_FullMitigation>
+
+</LanguageData>

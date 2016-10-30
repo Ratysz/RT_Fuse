@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CompRTFuse_SurgeMitigation>缓冲{0}Wd电力释放。</CompRTFuse_SurgeMitigation>
+  <CompRTFuse_WillBreakdown>跳闸后需要修理。</CompRTFuse_WillBreakdown>
+  <CompRTFuse_WillFlick>跳闸后需要手动复位。</CompRTFuse_WillFlick>
+
+</LanguageData>

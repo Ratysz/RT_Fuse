@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ResearchProject_RTCircuitBreakers.label>電路斷路器</ResearchProject_RTCircuitBreakers.label>
+  <ResearchProject_RTCircuitBreakers.description>解鎖建造「電路斷路器」，可佈置於帶有電池的電網的任意一處。每個斷路器可以吸收3000Wd的放電量（三個標準電池），跳閘後需要手動復位。</ResearchProject_RTCircuitBreakers.description>
+
+
+</LanguageData>
