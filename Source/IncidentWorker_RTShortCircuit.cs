@@ -11,23 +11,24 @@ namespace RT_Fuse
 {
 	public class IncidentWorker_RTShortCircuit : IncidentWorker
 	{
-		private IEnumerable<Building> UsableBatteries()
+		private IEnumerable<Building> UsableBatteries(Map map)
 		{
 			return
-				from Building battery in Find.ListerBuildings.allBuildingsColonist
+				from Building battery in map.listerBuildings.allBuildingsColonist
 				where (battery.TryGetComp<CompPowerBattery>() != null
 						&& battery.TryGetComp<CompPowerBattery>().StoredEnergy > 50f)
 				select battery as Building;
 		}
 		
-		protected override bool CanFireNowSub()
+		protected override bool CanFireNowSub(IIncidentTarget target)
 		{
-			return UsableBatteries().Any();
+			return UsableBatteries((Map)target).Any();
 		}
 
 		public override bool TryExecute(IncidentParms parms)
 		{
-			List<Building> batteries = UsableBatteries().ToList();
+			Map map = (Map)parms.target;
+			List<Building> batteries = UsableBatteries(map).ToList();
 			if (batteries.Count() == 0) return false;
 
 			PowerNet powerNet = batteries.RandomElement().PowerComp.PowerNet;
@@ -67,17 +68,17 @@ namespace RT_Fuse
 				if (explosionRadius > 14.9f) explosionRadius = 14.9f;
 				
 				GenExplosion.DoExplosion(
-					victim.Position, explosionRadius, DamageDefOf.Flame,
-					null, null, null);
+					victim.Position, map, explosionRadius, DamageDefOf.Flame,
+					null, null, null, null, null, 0f, 1, false, null, 0f, 1);
 
 				if (explosionRadius > 3.5f)
 					GenExplosion.DoExplosion(
-						victim.Position, explosionRadius * 0.3f, DamageDefOf.Bomb,
-						null, null, null);
+						victim.Position, map, explosionRadius * 0.3f, DamageDefOf.Bomb,
+						null, null, null, null, null, 0f, 1, false, null, 0f, 1);
 
 				if (!victim.Destroyed)
 					victim.TakeDamage(new DamageInfo(
-						DamageDefOf.Bomb, 200, null, null, null));
+						DamageDefOf.Bomb, 200, -1f, null, null));
 
 				if (energyTotal == energyTotalHistoric)
 				{
@@ -114,9 +115,8 @@ namespace RT_Fuse
 			else
 			{
 				victim.TakeDamage(new DamageInfo(
-					DamageDefOf.Bomb,
-					Rand.Range(0, (int)Math.Floor(0.1f * victim.MaxHitPoints)),
-					null, null, null));
+					DamageDefOf.Bomb, Rand.Range(0, (int)Math.Floor(0.1f * victim.MaxHitPoints)),
+					-1f, null, null));
 				
 				stringBuilder.Append("IncidentWorker_RTShortCircuit_FullMitigation".Translate(new object[] 
 				{
@@ -127,7 +127,7 @@ namespace RT_Fuse
 
 			Find.LetterStack.ReceiveLetter(
 				"LetterLabelShortCircuit".Translate(), stringBuilder.ToString(),
-				LetterType.BadNonUrgent, victim.Position, null);
+				LetterType.BadNonUrgent, new TargetInfo(victim.Position, map, false), null);
 
 			return true;
 		}
