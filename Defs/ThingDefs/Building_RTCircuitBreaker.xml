@@ -40,7 +40,7 @@
 		<pathCost>30</pathCost>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>1000</WorkToMake>
+			<WorkToBuild>1000</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<Beauty>-10</Beauty>
 		</statBases>
