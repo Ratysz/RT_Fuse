@@ -64,7 +64,7 @@ namespace RT_Fuse
 
 			if (energyTotal > 0)
 			{
-				float explosionRadius = Mathf.Sqrt(energyTotal * 0.05f);
+				float explosionRadius = Mathf.Sqrt(energyTotal) * 0.05f;
 				if (explosionRadius > 14.9f) explosionRadius = 14.9f;
 				
 				GenExplosion.DoExplosion(
