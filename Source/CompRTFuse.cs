@@ -36,16 +36,9 @@ namespace RT_Fuse
 		private CompBreakdownable compBreakdownable;
 		private CompFlickable compFlickable;
 
-		public override void PostSpawnSetup()
+		public override void PostSpawnSetup(bool respawningAfterLoad)
 		{
-			base.PostSpawnSetup();
-			IncidentDef incidentDef = DefDatabase<IncidentDef>.GetNamed("ShortCircuit");
-			if (incidentDef.workerClass != typeof(IncidentWorker_RTShortCircuit))
-			{
-				incidentDef.workerClass = typeof(IncidentWorker_RTShortCircuit);
-				DefDatabase<IncidentDef>.ResolveAllReferences();
-				Log.Message("RT_Fuse: replaced IncidentWorker for ShortCircuit.");
-			}
+			base.PostSpawnSetup(respawningAfterLoad);
 			compBreakdownable = parent.TryGetComp<CompBreakdownable>();
 			compFlickable = parent.TryGetComp<CompFlickable>();
 		}

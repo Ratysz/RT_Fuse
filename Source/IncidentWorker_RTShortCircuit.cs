@@ -16,7 +16,7 @@ namespace RT_Fuse
 			return
 				from Building battery in map.listerBuildings.allBuildingsColonist
 				where (battery.TryGetComp<CompPowerBattery>() != null
-						&& battery.TryGetComp<CompPowerBattery>().StoredEnergy > 50f)
+						&& battery.TryGetComp<CompPowerBattery>().StoredEnergy >= 50f)
 				select battery as Building;
 		}
 		
@@ -127,7 +127,7 @@ namespace RT_Fuse
 
 			Find.LetterStack.ReceiveLetter(
 				"LetterLabelShortCircuit".Translate(), stringBuilder.ToString(),
-				LetterType.BadNonUrgent, new TargetInfo(victim.Position, map, false), null);
+				LetterDefOf.BadNonUrgent, new TargetInfo(victim.Position, map, false), null);
 
 			return true;
 		}
