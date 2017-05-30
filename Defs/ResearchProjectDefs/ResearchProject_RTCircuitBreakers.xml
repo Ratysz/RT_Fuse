@@ -14,6 +14,9 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
+		<tab>RTMods</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 </ResearchProjectDefs>

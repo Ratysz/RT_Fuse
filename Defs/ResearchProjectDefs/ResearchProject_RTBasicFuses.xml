@@ -10,6 +10,9 @@
 		<prerequisites>
 			<li>Batteries</li>
 		</prerequisites>
+		<tab>RTMods</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 </ResearchProjectDefs>
