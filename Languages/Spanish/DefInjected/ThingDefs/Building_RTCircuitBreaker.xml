@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Building_RTCircuitBreaker.label>Cortacircuitos</Building_RTCircuitBreaker.label>
+	<Building_RTCircuitBreaker.description>Un conjunto de cortacircuitos automáticos. Maneja hasta 3000 Wd de descarga, se apagará si se dispara.</Building_RTCircuitBreaker.description>
+
+</LanguageData>
