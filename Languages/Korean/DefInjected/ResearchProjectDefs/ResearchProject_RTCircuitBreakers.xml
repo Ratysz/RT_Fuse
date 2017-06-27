@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <ResearchProject_RTCircuitBreakers.label>회로 차단기</ResearchProject_RTCircuitBreakers.label>
+    <ResearchProject_RTCircuitBreakers.description>회로 차단기를 제작 할 수 있게 됩니다. 배터리와 연결된 전력망 어디에든 설치할 수 있습니다. 각각의 퓨즈는 최대 3000Wd의 전력을 소모함으로써 안전하게 방전시킬 수 있으며 방전 시마다 수동으로 재설정해야 합니다.</ResearchProject_RTCircuitBreakers.description>
+
+</LanguageData>
