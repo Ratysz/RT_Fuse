@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
 
 	<ThingDef>
 		<defName>Building_RTMakeshiftFuse</defName>
@@ -47,9 +47,6 @@
 			<Steel>20</Steel>
 			<Component>1</Component>
 		</costList>
-		<building>
-			<ignoreNeedsPower>True</ignoreNeedsPower>
-		</building>
 
 		<comps>
 			<li Class="CompProperties_Power">
@@ -65,4 +62,4 @@
 		</comps>
 	</ThingDef>
 
-</Buildings>
+</Defs>

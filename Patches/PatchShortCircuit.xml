@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Patch>
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/IncidentDef[defName = "ShortCircuit"]/workerClass</xpath>
-		<value>
-			<workerClass>RT_Fuse.IncidentWorker_RTShortCircuit</workerClass>
-		</value>
-	</Operation>
-</Patch>
