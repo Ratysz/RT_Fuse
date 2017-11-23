@@ -122,7 +122,6 @@ namespace RT_Fuse
 					stringBuilder.AppendLine();
 					stringBuilder.Append("IncidentWorker_RTShortCircuit_PartialMitigation".Translate(new object[]
 					{
-						"AnElectricalConduit".Translate(),
 						totalEnergyHistoric.ToString("F0"),
 						(totalEnergyHistoric - totalEnergy).ToString("F0")
 					}));
@@ -138,7 +137,6 @@ namespace RT_Fuse
 				stringBuilder.AppendLine();
 				stringBuilder.Append("IncidentWorker_RTShortCircuit_FullMitigation".Translate(new object[]
 				{
-					"AnElectricalConduit".Translate(),
 					totalEnergyHistoric.ToString("F0")
 				}));
 			}
