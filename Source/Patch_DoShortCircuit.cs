@@ -22,24 +22,6 @@ namespace RT_Fuse
 			return (bool)tryStartFireNearMethodInfo.Invoke(null, new object[] { culprit });
 		}
 
-		private static void DrainBatteriesAndCauseExplosion(PowerNet net, Building culprit, out float totalEnergy, out float explosionRadius)
-		{
-			totalEnergy = 0f;
-			for (int i = 0; i < net.batteryComps.Count; i++)
-			{
-				CompPowerBattery compPowerBattery = net.batteryComps[i];
-				totalEnergy += compPowerBattery.StoredEnergy;
-				compPowerBattery.DrawPower(compPowerBattery.StoredEnergy);
-			}
-			explosionRadius = Mathf.Sqrt(totalEnergy) * 0.05f;
-			explosionRadius = Mathf.Clamp(explosionRadius, 1.5f, 14.9f);
-			GenExplosion.DoExplosion(culprit.Position, net.Map, explosionRadius, DamageDefOf.Flame, null, -1, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
-			if (explosionRadius > 3.5f)
-			{
-				GenExplosion.DoExplosion(culprit.Position, net.Map, explosionRadius * 0.3f, DamageDefOf.Bomb, null, -1, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
-			}
-		}
-
 		static bool Prefix(Building culprit)
 		{
 			PowerNet powerNet = culprit.PowerComp.PowerNet;
@@ -101,10 +83,10 @@ namespace RT_Fuse
 			{
 				explosionRadius = Mathf.Sqrt(totalEnergy) * 0.05f;
 				explosionRadius = Mathf.Clamp(explosionRadius, 1.5f, 14.9f);
-				GenExplosion.DoExplosion(culprit.Position, map, explosionRadius, DamageDefOf.Flame, null, -1, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
+				GenExplosion.DoExplosion(culprit.Position, powerNet.Map, explosionRadius, DamageDefOf.Flame, null, -1, null, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
 				if (explosionRadius > 3.5f)
 				{
-					GenExplosion.DoExplosion(culprit.Position, map, explosionRadius * 0.3f, DamageDefOf.Bomb, null, -1, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
+					GenExplosion.DoExplosion(culprit.Position, powerNet.Map, explosionRadius * 0.3f, DamageDefOf.Bomb, null, -1, null, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
 				}
 
 				if (totalEnergy == totalEnergyHistoric)
