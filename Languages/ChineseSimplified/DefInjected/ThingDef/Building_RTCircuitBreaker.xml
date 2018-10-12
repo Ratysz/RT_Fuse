@@ -2,7 +2,7 @@
 <LanguageData>
 
   <Building_RTCircuitBreaker.label>电路断路器</Building_RTCircuitBreaker.label>
-  <Building_RTCircuitBreaker.description>一组自动电路断路器，可吸收3000Wd的放电，跳闸后会关闭。</Building_RTCircuitBreaker.description>
+  <Building_RTCircuitBreaker.description>一组自动电路断路器，可吸收1800Wd的放电，跳闸后会关闭。</Building_RTCircuitBreaker.description>
 
 
 </LanguageData>

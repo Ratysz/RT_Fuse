@@ -2,6 +2,6 @@
 <LanguageData>
 
     <Building_RTCircuitBreaker.label>회로 차단기</Building_RTCircuitBreaker.label>
-    <Building_RTCircuitBreaker.description>자동 회로 차단기 입니다. 3000Wd만큼을 방전시킬 수 있으며 수동으로 재설정 해야합니다.</Building_RTCircuitBreaker.description>
+    <Building_RTCircuitBreaker.description>자동 회로 차단기 입니다. 1800Wd만큼을 방전시킬 수 있으며 수동으로 재설정 해야합니다.</Building_RTCircuitBreaker.description>
 
 </LanguageData>
