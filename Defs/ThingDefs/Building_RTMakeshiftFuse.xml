@@ -17,6 +17,7 @@
 		<graphicData>
 			<texPath>RT_Buildings/Building_RTMakeshiftFuse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1.25)</drawSize>
 			<damageData>
 				<rect>(0, 0, 1, 1)</rect>
 			</damageData>
@@ -26,7 +27,7 @@
 		<constructEffect>ConstructMetal</constructEffect>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
-		<staticSunShadowHeight>0.25</staticSunShadowHeight>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
 		<castEdgeShadows>true</castEdgeShadows>
 
 		<researchPrerequisites>
@@ -37,8 +38,8 @@
 		<passability>PassThroughOnly</passability>
 		<selectable>True</selectable>
 		<rotatable>False</rotatable>
-		<fillPercent>0.30</fillPercent>
-		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<pathCost>70</pathCost>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>500</WorkToBuild>

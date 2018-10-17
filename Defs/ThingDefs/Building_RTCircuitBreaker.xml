@@ -17,7 +17,7 @@
 		<graphicData>
 			<texPath>RT_Buildings/Building_RTCircuitBreaker</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1, 2)</drawSize>
+			<drawSize>(1.25, 2.25)</drawSize>
 			<damageData>
 				<rect>(0, 0, 1, 2)</rect>
 			</damageData>
@@ -27,7 +27,7 @@
 		<constructEffect>ConstructMetal</constructEffect>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
-		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
 		<castEdgeShadows>true</castEdgeShadows>
 
 		<researchPrerequisites>
@@ -39,8 +39,8 @@
 		<passability>PassThroughOnly</passability>
 		<selectable>True</selectable>
 		<rotatable>True</rotatable>
-		<fillPercent>0.30</fillPercent>
-		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<pathCost>70</pathCost>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>1000</WorkToBuild>
