@@ -1,2 +1,2 @@
 # RT_Fuse
-RimWorld mod; implements electrical fuses to mitigate the short circuit incident.
+RimWorld mod; see [About.xml](../master/About/About.xml) and [forum thread](https://ludeon.com/forums/index.php?topic=11272).
