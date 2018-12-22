@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<CompRTFuse_SurgeMitigation>Atténue des décharges électriques jusqu'à {0} Wd.</CompRTFuse_SurgeMitigation>
+	<CompRTFuse_WillBreakdown>Nécéssitera des réparations si déclenché.</CompRTFuse_WillBreakdown>
+	<CompRTFuse_WillFlick>Nécéssitera d'être réarmé manuellement si déclenché.</CompRTFuse_WillFlick>
+
+</LanguageData>
