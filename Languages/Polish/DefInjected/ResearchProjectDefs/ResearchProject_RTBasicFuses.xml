@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<ResearchProject_RTBasicFuses.label>proste bezpieczniki</ResearchProject_RTBasicFuses.label>
+	<ResearchProject_RTBasicFuses.description>Pozwala konstruować prowizoryczne bezpieczniki; mogą zostać umieszczone w dowolnym miejscu sieci energetycznej. Każdy z nich jest w stanie bezpiecznie rozproszyć ładunek 1800Wd (trzy podstawowe baterie), aczkolwiek po użyciu będzie wymagał naprawy.</ResearchProject_RTBasicFuses.description>
+
+</LanguageData>

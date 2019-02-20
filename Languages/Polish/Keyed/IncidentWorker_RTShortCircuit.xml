@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<IncidentWorker_RTShortCircuit_PartialMitigation>{0} Wd energii zostało rozładowane, {1} zostało rozproszone przez bezpieczniki.</IncidentWorker_RTShortCircuit_PartialMitigation>
+
+	<IncidentWorker_RTShortCircuit_FullMitigation>{0} Wd energii zostało rozładowane, ale bezpieczniki zapobiegły poważniejszym uszkodzeniom.</IncidentWorker_RTShortCircuit_FullMitigation>
+
+</LanguageData>
