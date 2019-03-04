@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<Building_RTCircuitBreaker.label>włącznik instalacyjny</Building_RTCircuitBreaker.label>
+	<Building_RTCircuitBreaker.label>wyłącznik instalacyjny</Building_RTCircuitBreaker.label>
 	<Building_RTCircuitBreaker.description>Automatyczny wyłącznik instalacyjny. Rozprasza 1800Wd ładunku, będzie wymagał przełączenia po użyciu.</Building_RTCircuitBreaker.description>
 
 </LanguageData>
