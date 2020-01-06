@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Building_RTCircuitBreaker.label>Disjuntor</Building_RTCircuitBreaker.label>
+	<Building_RTCircuitBreaker.description>Um conjunto de disjuntores automáticos. Manipula até 1800 Wd de descarga, ele será desativado se for acionado.</Building_RTCircuitBreaker.description>
+
+</LanguageData>

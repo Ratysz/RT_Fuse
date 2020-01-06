@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<ResearchProject_RTCircuitBreakers.label>Disjuntor</ResearchProject_RTCircuitBreakers.label>
+	<ResearchProject_RTCircuitBreakers.description>Permite construir disjuntores; Pode ser colocado em qualquer lugar da rede elétrica com baterias. Cada um é suficiente para dissipar com segurança até 1800 Wd (três baterias padrão) de descarga e precisará ser redefinido manualmente se for acionado.</ResearchProject_RTCircuitBreakers.description>
+
+</LanguageData>

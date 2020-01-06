@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<CompRTFuse_SurgeMitigation>Alivia até {0} Wd de choque elétrico.</CompRTFuse_SurgeMitigation>
+	<CompRTFuse_WillBreakdown>Requer reparos se disparado.</CompRTFuse_WillBreakdown>
+	<CompRTFuse_WillFlick>Requer redefinição manual se disparado.</CompRTFuse_WillFlick>
+
+</LanguageData>

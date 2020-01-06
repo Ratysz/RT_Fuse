@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<ResearchProject_RTBasicFuses.label>Fusíveis básicos</ResearchProject_RTBasicFuses.label>
+	<ResearchProject_RTBasicFuses.description>Permite a construção de fusíveis improvisados. Pode ser colocado em qualquer lugar da rede elétrica com baterias. Cada uma é suficiente para dissipar com segurança até 1800 Wd (três baterias padrão) de descarga, mas exigirá reparos se ela disparar.</ResearchProject_RTBasicFuses.description>
+
+</LanguageData>

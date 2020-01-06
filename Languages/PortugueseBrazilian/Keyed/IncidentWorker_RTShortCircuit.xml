@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<IncidentWorker_RTShortCircuit_PartialMitigation>Toda {0} Wd de energia nas baterias conectadas foi descarregada, mas {1} foi amortecido pelos fusíveis.</IncidentWorker_RTShortCircuit_PartialMitigation>
+
+	<IncidentWorker_RTShortCircuit_FullMitigation>Toda {0} Wd de energia nas baterias conectadas foi descarregada, mas qualquer dano sério foi evitado pelos fusíveis.</IncidentWorker_RTShortCircuit_FullMitigation>
+
+</LanguageData>
