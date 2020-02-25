@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System.Reflection;
 using Verse;
 
@@ -8,7 +8,7 @@ namespace RT_Fuse
 	{
 		public Mod(ModContentPack content) : base(content)
 		{
-			var harmony = HarmonyInstance.Create("io.github.ratysz.madskills");
+			var harmony = new Harmony("io.github.ratysz.madskills");
 			harmony.PatchAll(Assembly.GetExecutingAssembly());
 		}
 	}

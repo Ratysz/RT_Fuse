@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-	<ResearchProject_RTCircuitBreakers.label>Cortacircuitos</ResearchProject_RTCircuitBreakers.label>
-	<ResearchProject_RTCircuitBreakers.description>Permite construir cortacircuitos; Se puede colocar en cualquier lugar en una red eléctrica con baterías. Cada uno es suficiente para disipar con seguridad hasta 1800 Wd (tres baterías estándar) de descarga y tendrá que ser restablecido manualmente si se dispara.</ResearchProject_RTCircuitBreakers.description>
-
-</LanguageData>
