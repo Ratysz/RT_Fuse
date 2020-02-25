@@ -60,21 +60,27 @@ namespace RT_Fuse
 			return stringBuilder.ToString();
 		}
 
-		public float MitigateSurge(float amount)
+		public float MitigateSurge()
 		{
 			if (compBreakdownable == null || !compBreakdownable.BrokenDown)
 			{
-				if (compBreakdownable != null && breakdownOnTrip)
+				if (breakdownOnTrip)
 				{
-					compBreakdownable.DoBreakdown();
-					return surgeMitigation;
+					if (compBreakdownable != null)
+					{
+						compBreakdownable.DoBreakdown();
+						return surgeMitigation;
+					}
 				}
 				else if (compFlickable != null)
 				{
-					compFlickable.ResetToOn();
-					compFlickable.DoFlick();
-					FlickUtility.UpdateFlickDesignation(parent);
-					return surgeMitigation;
+					if (compFlickable.SwitchIsOn)
+					{
+						compFlickable.ResetToOn();
+						compFlickable.DoFlick();
+						FlickUtility.UpdateFlickDesignation(parent);
+						return surgeMitigation;
+					}
 				}
 			}
 			return 0.0f;

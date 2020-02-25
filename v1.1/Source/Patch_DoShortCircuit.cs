@@ -44,7 +44,7 @@ namespace RT_Fuse
 					CompRTFuse fuseComp = transmitter.parent.GetComp<CompRTFuse>();
 					if (fuseComp != null)
 					{
-						totalEnergy -= fuseComp.MitigateSurge(totalEnergy);
+						totalEnergy -= fuseComp.MitigateSurge();
 						if (totalEnergy <= 0) break;
 					}
 				}
@@ -58,7 +58,7 @@ namespace RT_Fuse
 					CompRTFuse fuseComp = transmitter.parent.GetComp<CompRTFuse>();
 					if (fuseComp != null)
 					{
-						fuseComp.MitigateSurge(fuseComp.surgeMitigation);
+						fuseComp.MitigateSurge();
 						mitigated = true;
 						break;
 					}
