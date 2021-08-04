@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<IncidentWorker_RTShortCircuit_PartialMitigation>连接的电池中的所有{0}Wd的能量都被释放了，但其中的{1}被保险丝降低了。</IncidentWorker_RTShortCircuit_PartialMitigation>
+
+	<IncidentWorker_RTShortCircuit_FullMitigation>连接的电池中的所有{0}Wd的能量都被释放了，但是保险丝防止了任何严重的损坏。</IncidentWorker_RTShortCircuit_FullMitigation>
+
+</LanguageData>

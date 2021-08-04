@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Building_RTCircuitBreaker.label>断路器</Building_RTCircuitBreaker.label>
+	<Building_RTCircuitBreaker.description>一套自动断路器。可处理高达1800 Wd的过载放电，如果跳闸则会断开。</Building_RTCircuitBreaker.description>
+
+</LanguageData>

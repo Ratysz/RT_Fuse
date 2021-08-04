@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Building_RTMakeshiftFuse.label>临时保险丝</Building_RTMakeshiftFuse.label>
+	<Building_RTMakeshiftFuse.description>一个简单的保险丝。可处理高达1800 Wd过载放电，如果跳闸则需要维修。</Building_RTMakeshiftFuse.description>
+
+</LanguageData>

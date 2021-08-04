@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<ResearchProject_RTCircuitBreakers.label>断路器</ResearchProject_RTCircuitBreakers.label>
+	<ResearchProject_RTCircuitBreakers.description>允许建立断路器；可以放在有电池的电力网络的任何地方。每一个都足以安全地消解高达1800Wd（三个标准电池）的过载放电，如果跳闸则需要手动复位。</ResearchProject_RTCircuitBreakers.description>
+
+</LanguageData>

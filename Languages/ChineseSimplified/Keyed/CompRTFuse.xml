@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<CompRTFuse_SurgeMitigation>缓解高达{0}Wd的过载放电。</CompRTFuse_SurgeMitigation>
+	<CompRTFuse_WillBreakdown>如果发生跳闸，将需要修理。</CompRTFuse_WillBreakdown>
+	<CompRTFuse_WillFlick>如果发生跳闸，将需要手动复位。</CompRTFuse_WillFlick>
+
+</LanguageData>

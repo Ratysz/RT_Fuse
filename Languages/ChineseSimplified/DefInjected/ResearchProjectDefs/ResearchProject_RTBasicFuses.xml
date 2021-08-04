@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<ResearchProject_RTBasicFuses.label>临时保险丝</ResearchProject_RTBasicFuses.label>
+	<ResearchProject_RTBasicFuses.description>允许建立临时保险丝；可以放在有电池的电力网络的任何地方。每一个都足以安全地消解高达1800Wd（三节标准电池）的过载放电，但如果跳闸则需要维修。</ResearchProject_RTBasicFuses.description>
+
+</LanguageData>
